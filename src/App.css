@@ -1,0 +1,121 @@
+:root{
+  --clr--primary :  #008170;
+  --clr--secondary :#FBE20C ;
+  --clr--100 : white; 
+  --clr--900 : black; 
+
+  --fw--800 : 800;
+  --fw--400 : 400;
+
+  --font--family : 'Archivo', sans-serif;
+  --font--family-secondary: 'Unbounded', sans-serif;
+
+  --fs--100 : 1em;
+  --fs--200 : 1.5em;
+  --fs--300 : 2em;
+  --fs--400 : 2.5em;
+
+  --tw-bg-opacity: 1;
+}
+
+*{
+  font-family: var(--font--family);
+  font-size: var(--fs--100);
+}
+
+body{
+  color: var(--clr--100); 
+  background-color: #008170f8;
+  overflow-x: hidden;
+}
+
+.text--shadow{
+  text-shadow: -1px -1px 0 #2a2a2a, 1px -1px 0 #2a2a2a, -1px 1px 0 #2a2a2a, 1px 1px 0 #2a2a2a, 4px 4px #2a2a2a;
+}
+
+.container{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container--header{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 30vh;
+  text-align: center;
+  font-size: 5rem;
+  font-weight: var(--fw--800);
+  line-height: 1.5;
+}
+
+.container--main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 70vh;
+  width: 100vw;
+}
+
+.container--input{
+  border: none;
+  width: 40%;
+  border-radius: 1em;
+  background: rgba(255, 255, 255, 0.541);
+  color: black;
+  font-size: 2em;
+  text-align: center;
+}
+
+.message, .container--output{
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: var(--fw--800);
+  line-height: 1.5;
+  color: white;
+  font-family: var(--font--family-secondary);
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.container--output{
+  font-family: var(--font--family-secondary);
+  font-size: var(--fs--300);
+}
+
+.emojis{
+  font-size: 2.5em;
+  padding: .1em;
+}
+
+.emojis:hover{
+  cursor: pointer;
+}
+
+.container--emoji{
+  background-color: rgba(190, 173, 250, 0.493);
+  width: 100%;
+  margin-top: 1.3em;
+
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  justify-content: center;
+  align-items: center;
+  align-content: space-evenly;
+  justify-items: center;
+
+  border: none;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
